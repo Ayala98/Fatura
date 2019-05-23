@@ -1,0 +1,13 @@
+public class FaturaTeste {
+
+    public static void main(String[] args) {
+        String codigo = args[0];
+        String descricao = args[1];
+        int quantidade = Integer.parseInt(args[2]);
+        double preco = Double.parseDouble(args[3]);
+
+        Fatura fatura = new Fatura(codigo, descricao, quantidade, preco);
+
+        System.out.println(fatura);
+    }
+}
